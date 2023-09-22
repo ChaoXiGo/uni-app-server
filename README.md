@@ -48,8 +48,6 @@ qi-niu-cloud:
   host-name: http://s1blps18l.hn-bkt.clouddn.com/
   ```
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Alt text](1695372256732.jpg)
-
 新建属性类``/config/QiNiuProperties.java``
 
 ```java
@@ -70,7 +68,6 @@ public class QiNiuProperties {
 
 新建工具类 ``/utils/FileUploadUtil.java``
 
-![Alt text](image.png)
 
 将结果拼接hostname返回
 
@@ -164,4 +161,3 @@ public class upLoadImageController {
 ```
 
 注意key固定 ``file``
-![Alt text](image-1.png)
