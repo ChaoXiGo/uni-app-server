@@ -159,5 +159,3 @@ public class upLoadImageController {
     }
 }
 ```
-
-注意key固定 ``file``
