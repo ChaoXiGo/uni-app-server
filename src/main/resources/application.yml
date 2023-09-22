@@ -1,0 +1,35 @@
+server:
+  #  ssl:
+  #    enabled: true # 开启 SSL
+  #    key-password: changeit # mkcert 创建证书时使用的默认密码
+  #    key-store: classpath:127.0.0.1+1.p12 # 这地方写你自己的证书名称
+  #    key-store-password: changeit # mkcert 创建证书时使用的默认密码
+  #    key-store-type: PKCS12
+  port: 8080 # https 默认端口是 443
+
+# 配置数据源
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/uni_app
+
+
+# mybatis配置
+mybatis-plus:
+  configuration:
+    # 配置驼峰命名
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: ASSIGN_ID
+
+# 七牛云配置信息
+qi-niu-cloud:
+  access-key: 3lSbT8J7zPMbLaaraN_1FW0N2NOavJ_2Y-xmlQBE
+  access-secret: xWQzky2ptZkoCKMSF1L12JIqMkqkDrxJgFvhBVIX
+  bucket-name: chaoxi-store
+  host-name: http://s1blps18l.hn-bkt.clouddn.com/
